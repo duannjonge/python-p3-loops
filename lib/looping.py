@@ -2,22 +2,22 @@
 
 def happy_new_year():
     # code goes here!
-    count=11
-    while(count<=11 and count >1):
-        count -= 1
+    count=10
+    while(count<=10 and count >=1):
+       
         print(count)
-    if count ==1:
-        print("Happy New Year!")
+        count -= 1
+    print("Happy New Year!")
       
 
 happy_new_year()
 
 def square_integers(int_list):
     # code goes here!
-    value= int(int_list)
-    print(value)
-    return str(value **2)
-
+    new_list=[]
+    for n in int_list:
+        new_list.append(n * n)
+    return new_list
 square_integers([1, 2, 3, 4, 5])
 
 def fizzbuzz():
